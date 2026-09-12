@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="nord">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nasmahna@portfolio — blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Hide all blog posts by default */
+        .post {
+            display: none;
+        }
+
+        /* Show only the post matching the current URL hash (#id) */
+        .post:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="shell">
+    <div class="shell__window" role="document" aria-label="Terminal-style blog">
+        <div class="shell__titlebar">
+            <div class="shell__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <nav class="shell__tabs" aria-label="Site">
+                <!-- Home Link: Redirects to index.html -->
+                <a class="shell__tab" href="index.html">~/</a>
+                <!-- Blog Link: Active page (using blog.html# resets target hash if clicked) -->
+                <a class="shell__tab is-active" href="blog.html#" aria-current="page">~/blog</a>
+            </nav>
+            <span class="shell__title">blog</span>
+        </div>
+        <main id="main" class="shell__body">
+            <p class="line"><span class="prompt">nasmahna@portfolio<span class="prompt__host">:~/blog$</span></span> <span class="cmd">ls -lt posts/</span></p>
+            <div class="ls-wrap">
+                <table class="ls-table" aria-label="Blog posts">
+                    <thead>
+                    <tr>
+                        <th scope="col">Perms</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Name</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="perm">-rw-r--r--</td>
+                        <td class="meta">12 Sep 2026</td>
+                        <td class="name"><a href="#hello">hello.md</a></td>
+                    </tr>
+                    <tr>
+                        <td class="perm">-rw-r--r--</td>
+                        <td class="meta">12 Sep 2026</td>
+                        <td class="name"><a href="#work-journey">workJourney.md</a></td>
+                    </tr>
+                    <tr>
+                        <td class="perm">-rw-r--r--</td>
+                        <td class="meta">12 Sep 2026</td>
+                        <td class="name"><a href="#tech-thoughts">techThoughts.md</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Blog Post 1 -->
+            <article id="hello" class="post">
+                <p class="line"><span class="prompt">nasmahna@portfolio<span class="prompt__host">:~/blog$</span></span> <span class="cmd">cat posts/hello.md</span></p>
+                <h2 class="post__title">Hello, welcome to my blog!</h2>
+                <p class="post__meta">12 Sep 2026</p>
+                <div class="block">
+                    <p>I'm excited to share my thoughts and experiences with you. This is a space where I'll be writing about my journey as a test engineer, my experiences with AI, and my thoughts on the future of technology.</p>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article id="work-journey" class="post">
+                <p class="line"><span class="prompt">nasmahna@portfolio<span class="prompt__host">:~/blog$</span></span> <span class="cmd">cat posts/workJourney.md</span></p>
+                <h2 class="post__title">My Work Journey</h2>
+                <p class="post__meta">12 Sep 2026</p>
+                <div class="block">
+                    <p>I've been working as a test engineer for the past few years. I've worked on a variety of projects, including web applications, mobile applications, and APIs.</p>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article id="tech-thoughts" class="post">
+                <p class="line"><span class="prompt">nasmahna@portfolio<span class="prompt__host">:~/blog$</span></span> <span class="cmd">cat posts/techThoughts.md</span></p>
+                <h2 class="post__title">Tech Thoughts</h2>
+                <p class="post__meta">12 Sep 2026</p>
+                <div class="block">
+                    <h2>We Keep Building Smarter Systems for a Government That Has Yet to Become Better at Serving It's People</h2>
+                    <h4>On technology, state capacity, and the uncomfortable gap between digital progress and public welfare.</h4>
+                    <br>by Nasmah Nur Amiroh
+                    <br>29 Aug 2026
+                    <br>
+                    <br>
+                    <p>There is something increasingly strange about the way we talk about the future of Indonesia. We are surrounded by conversations about artificial intelligence, emerging technology, digital transformation, big data, smart cities, digital public infrastructure, and the promise of a more connected and efficient government. 
+                        We are told that technology will change the way the state understands its citizens, distributes resources, and delivers public services. At the same time, however, we continue to see situations where ordinary citizens have to rely on one another when the state fails to respond adequately. 
+                        When disasters happen, communities organise donations, volunteers travel to affected areas, and people use social media to distribute information and coordinate assistance. There is something admirable about this solidarity, but there is also something deeply uncomfortable about it. 
+                        If citizens increasingly have to compensate for the gaps in public services themselves, we have to ask what exactly we expect the state to do.</p>
+                    <p>This question is particularly important because there are certain problems that individuals and communities simply cannot solve on their own. A person can donate money to a disaster victim, but they cannot build a national disaster-response system. 
+                        A community can organise food and medicine, but it cannot independently establish a national healthcare or social-protection system. These are the kinds of problems for which governments exist in the first place: to collect resources, coordinate institutions, manage information, and turn those resources into public goods. 
+                        In principle, technological development should make this process more effective. Better information should allow governments to understand their populations more accurately; better communication should allow them to respond more quickly; and better digital infrastructure should make public services easier to access. 
+                        This creates an important question for a country like Indonesia: if our technological capacity continues to grow, why does that progress not always appear to translate into better outcomes for ordinary citizens?</p>
+                    <p>I think part of the answer lies in a misconception about what Indonesia’s problem actually is. It is tempting to describe Indonesia as a country that is simply technologically behind, but that description is increasingly inadequate. 
+                        Indonesia has invested heavily in digital government, including the development of SPBE, integrated government databases, digital public services, and various initiatives involving artificial intelligence and digital public infrastructure. 
+                        The OECD’s recent assessment of Indonesia’s digital government development illustrates this contradiction quite well. Indonesia performs relatively strongly in its efforts to make government digital by design, while remaining weaker in areas such as data-driven government, government-as-a-platform, openness, and proactive public services. T
+                        he problem, therefore, is not necessarily that Indonesia lacks technology. A more difficult question is whether the country’s institutional capacity has developed at the same pace as its technological capacity.</p>
+                    <p>This distinction matters because technology and public value are not the same thing. A government can build a sophisticated database, integrate millions of records, launch a digital platform, or deploy an AI system and still fail to improve a citizen’s life. 
+                        The existence of a functioning system is not, by itself, evidence that the system has succeeded. The more meaningful question is what happens after the technology is deployed. Does a person who needs social assistance actually receive it? Does a disaster victim receive help faster? 
+                        Does a citizen spend less time navigating bureaucracy? Does the government make better decisions because it has better information? In other words, digital transformation should ultimately be evaluated not by how sophisticated the government’s technology looks, but by whether that technology creates measurable public value.</p>
+                    <p>The Data Tunggal Sosial dan Ekonomi Nasional, or DTSEN, provides an interesting example of this problem. The basic idea behind integrating social and economic data is difficult to reject. Indonesia has historically dealt with fragmented datasets across different institutions, which can lead to inconsistent information and poorly targeted social assistance. 
+                        Creating a more integrated national socioeconomic database could, in theory, allow the government to identify vulnerable populations more accurately and distribute resources more effectively. This is exactly the kind of problem for which technology and data infrastructure should be useful. Yet centralising information does not automatically make that information accurate. 
+                        People’s economic circumstances change, databases become outdated, individuals can be incorrectly classified, and some people may not be represented properly in the first place. The technical question of whether data can be integrated therefore becomes an institutional question: who verifies the information, how frequently is it updated, and what happens when the system gets someone’s situation wrong?</p>
+                    <p>This is where digital government becomes much more than a technical project. The moment a government begins using a database to determine who receives assistance, data becomes a source of power. If a person’s eligibility for a public programme depends on how they are represented within a government system, then the ability to create, update, correct, and challenge that representation becomes extremely important. 
+                        A centralised database can improve coordination and reduce duplication, but it can also centralise decision-making. The more government decisions depend on digital systems, the more important it becomes to have mechanisms through which citizens can understand and challenge those decisions. Otherwise, digitalisation may make government more efficient without necessarily making it more accountable.</p>
+                    <p>The same tension becomes visible when we look at disaster response. Indonesia already possesses technological capabilities that previous generations could hardly have imagined: satellite imagery, geographic information systems, mobile communication networks, digital mapping, weather forecasting, large-scale databases, and increasingly sophisticated analytical tools. 
+                        These technologies can improve the ability to predict risks, identify affected areas, coordinate resources, and communicate information. Yet technology can only address problems that are technological in nature. If information exists but agencies fail to coordinate, if resources are available but logistics fail, or if a community is identified as vulnerable but receives insufficient political attention, a more sophisticated technological system does not necessarily solve the underlying problem. 
+                        The bottleneck may not be a lack of information at all. It may be the institutions responsible for acting on that information.</p>
+                    <p>This leads to a broader point about the relationship between technology and institutions: technology is an amplifier. Strong institutions can use technology to become more capable, while weak institutions can use the same technology without addressing the reasons they are weak in the first place. 
+                        A government can use data to make better decisions, but only if its institutions are capable of interpreting and acting on that data. It can use AI to automate processes, but automation does not remove the need for accountability. It can build a centralised digital infrastructure that connects government agencies, but interoperability alone does not guarantee coordination. 
+                        Technology can therefore increase the capacity of the state, but it does not automatically determine what that capacity is used for or who ultimately benefits from it.</p>
+                    <p>This is also why digital transformation should be understood as a political-economy issue rather than simply a technological one. Every major government system changes how information, resources, and decision-making power are distributed. 
+                        A welfare database determines who is visible to the state and who may be excluded. An automated system determines which decisions can be delegated to a machine and which remain subject to human judgement. A digital public service determines who can access government efficiently and who may be left behind by digital inequality. 
+                        Even the decision about which problems deserve technological solutions is itself political. The important questions are therefore not only whether a system works, but who designed it, who controls it, who benefits from it, who bears the consequences when it fails, and whether ordinary citizens have any meaningful ability to challenge it.</p>
+                    <p>This is where I think the conversation about AI in Indonesia often becomes too narrow. We tend to ask whether Indonesia is ready for AI, whether AI will replace jobs, or whether Indonesian companies and workers can compete in an AI-driven economy. 
+                        Those are important questions, but there is another question that deserves just as much attention: what happens when AI and other advanced technologies are introduced into institutions that are still struggling with more fundamental problems of capacity, coordination, accountability, and inequality? The answer is not necessarily that AI will make things worse. 
+                        Technology could significantly improve public services if it is implemented within institutions that are capable of using it responsibly. But expecting technology to compensate for institutional weaknesses is fundamentally different from using technology to strengthen institutions that already have the right incentives and accountability mechanisms.</p>
+                    <p>Ultimately, this brings the discussion back to the citizen. Digital government should not be evaluated primarily through the number of platforms launched, databases integrated, or AI initiatives announced. Those are indicators of technological activity, not necessarily public value. The more important questions are much simpler: is life easier for the citizen?
+                         Can they access the services they need? Can they receive assistance when they are vulnerable? Can they correct inaccurate information about themselves? Can they understand why the government has made a decision that affects them? And when the system fails, is there a clear institution that can be held responsible?</p>
+                    <p>Indonesia does not necessarily suffer from a lack of technology. It suffers when technological capacity grows faster than institutional capacity. We are increasingly capable of building smarter systems, but building a smarter system is not the same thing as building a better state. 
+                        The challenge of Indonesia’s digital transformation, therefore, is not simply to make the government more digital. It is to build institutions capable of turning technology into something that ordinary citizens can actually experience as better public services, greater accountability, and a higher quality of life.</p>
+                    <p>Perhaps the question we should be asking is therefore not whether Indonesia will become a digital state. It already is becoming one. The more important question is what kind of state that digitalisation will create, and whether that state will ultimately become more capable of serving the people it exists to serve.</p>
+                </div>
+            </article>
+
+            <p class="line footer-line">
+                <span class="prompt">nasmahna@portfolio<span class="prompt__host">:~/blog$</span></span>
+                <span class="cursor" aria-hidden="true"></span>
+                <span class="comment" style="margin-left: 0.35rem;">&copy; 2026 Nasmah Nur Amiroh</span>
+            </p>
+        </main>
+    </div>
+</div>
+</body>
+</html>

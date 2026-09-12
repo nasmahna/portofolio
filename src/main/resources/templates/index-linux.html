@@ -15,12 +15,16 @@
     <div class="shell__window" role="document" aria-label="Terminal-style portfolio">
         <div class="shell__titlebar">
             <div class="shell__dots" aria-hidden="true"><span></span><span></span><span></span></div>
-            <span class="shell__title">nasmahna@portfolio — bash</span>
+            <nav class="shell__tabs" aria-label="Site">
+                <a class="shell__tab is-active" href="/" aria-current="page">~/</a>
+                <a class="shell__tab is" href="/blog">~/blog</a>
+            </nav>
+            <span class="shell__title">bash</span>
         </div>
         <main id="main" class="shell__body">
             <p class="line"><span class="prompt">nasmahna@portfolio<span class="prompt__host">:~$</span></span> <span class="cmd">whoami &amp;&amp; cat ./role.txt</span></p>
             <p class="line h1-line">Nasmah Nur Amiroh</p>
-            <p class="line"><span class="str">Test Engineer</span> <span class="comment">/span></p>
+            <p class="line"><span class="str">Test Engineer</span> <span class="comment">at @CSGI</span></p>
 
             <section id="about" aria-labelledby="about-heading">
             <h2 id="about-heading" class="sr-only">About</h2>
@@ -28,13 +32,14 @@
             <div class="block">
                 <p>Hi, I'm Ami. Working as Test Engineer at @CSGI with experience in Automation Testing, Manual Testing, and AI development.</p>
                 <p>Beyond testing, I have hands-on experience in AI-related projects, where I explore how intelligent systems can support and optimize workflows. Recently, I've been expanding my skill set into backend development, aiming to not only test systems but also understand and build them from the ground up. I'm especially interested in the intersection of technology, problem-solving, and impact.</p>
-                <p>In my free time, I (still) love running to continue my old journey and favorite gateway. Aside from that, I'm passionate about reading books (especially sci-fi and classic novels), watching movies, and traveling.</p>
+                <p>In my free time, I (still) love running to continue my old journey and favorite getaway. Aside from that, I'm passionate about reading books (especially sci-fi and classic novels), watching movies, and traveling.</p>
             </div>
             </section>
 
             <section id="projects" aria-labelledby="projects-heading">
             <h2 id="projects-heading" class="sr-only">Projects</h2>
             <p class="line"><span class="prompt">nasmahna@portfolio<span class="prompt__host">:~/projects$</span></span> <span class="cmd">ls -l</span></p>
+            <div class="ls-wrap">
             <table class="ls-table" aria-label="Projects">
                 <thead>
                 <tr>
@@ -51,8 +56,8 @@
                 </tr>
                 <tr>
                     <td class="perm">drwxr-xr-x</td>
-                    <td class="name"><a href="https://simple-api-lac-three.vercel.app/" target="_blank" rel="noopener noreferrer">api-tester/</a></td>
-                    <td class="meta">API testing with Rest Assured and JUnit.</td>
+                    <td class="name"><a href="https://legit-landing.vercel.app/" target="_blank" rel="noopener noreferrer">LEGIT/</a></td>
+                    <td class="meta">LEGIT gamified learning platform.</td>
                 </tr>
                 <tr>
                     <td class="perm">drwxr-xr-x</td>
@@ -66,6 +71,7 @@
                 </tr>
                 </tbody>
             </table>
+            </div>
             </section>
 
             <section id="contact" aria-labelledby="contact-heading">
